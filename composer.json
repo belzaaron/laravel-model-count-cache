@@ -1,0 +1,47 @@
+{
+    "name": "belzaaron/laravel-model-count-cache",
+    "description": "Adds support for having updated cached counts for your Laravel models.",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Aaron Belz",
+            "email": "belzaaron@gmail.com",
+            "homepage": "https://belzaaron.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/belzaaron/laravel-settings",
+    "keywords": ["Laravel", "Model", "Count", "Cache"],
+    "require": {
+        "illuminate/support": "^5.8",
+        "illuminate/contracts": "^5.8",
+        "illuminate/broadcasting": "^5.8",
+        "illuminate/queue": "^5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BelzAaron\\ModelCountCache\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BelzAaron\\ModelCountCache\\ModelCountCacheServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BelzAaron\\ModelCountCache\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
